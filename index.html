@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Major+Mono+Display&family=Monoton&family=Sixtyfour&family=VT323&display=swap');
+        .marquee {
+            text-align: center;
+        } 
+        .h1_, .h2_, .h3_ {
+            line-height: 0.8; 
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+        .title_org {
+            text-align: center;
+            font-family: "Sixtyfour", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings: "BLED" 0, "SCAN" 0;
+            margin: 0;
+            font-size: 30px;
+            color: #f05e23;
+        }
+
+       
+        .solar-system {
+            background-image: url('stars.jpeg'); 
+            background-size: cover; 
+            background-position: center; 
+            height: 100vh; 
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+        }
+
+        #sun {
+            width: 100px; 
+            height: 100px; 
+            background-color: yellow; 
+            border-radius: 50%; 
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Game Simulation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<p class="title_org">
+    <marquee class="marquee" direction="up" scrollamount= 3px>
+        <h3 class="h3_">Galactic</h3>
+        <h2 class="h2_">Laser Tag</h2>
+        <h1 class="h1_">Championship</h1>
+    </marquee>
+</p>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rules.html">How It Works</a></li>
+        <li><a href="fixtures.html">Fixtures</a></li>
+    </ul>
+</nav>
+
+<section class="solar-system">
+    <div id="solar-system-container">
+        <div id="sun"></div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2024 Space Game Simulation</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
